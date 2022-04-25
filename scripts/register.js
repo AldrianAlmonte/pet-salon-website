@@ -11,10 +11,7 @@ let petSalon={
     },
     pets:[] 
 }
-// console.log(petSalon)
-// function displaySalonInfo({
-    
-// })
+// function displaySalonInfo({})
 
 function Pet(pname,age,gender,pbreed,service,hname,cinfo){
     this.petName=pname;
@@ -30,7 +27,7 @@ function Pet(pname,age,gender,pbreed,service,hname,cinfo){
 //get the info from the inputs and store the info
 let inputName=document.getElementById("txtName");
 let inputAge=document.getElementById("txtAge");
-let inputGender=document.getElementById("txtGender");
+let inputGender=document.getElementById("selGender");
 let inputBreed=document.getElementById("txtBreed");
 let inputService=document.getElementById("selService");
 let inputHname=document.getElementById("txtHname");
@@ -64,8 +61,9 @@ function register(){
     let thePet = new Pet (inputName.value,inputAge.value,inputGender.value,inputBreed.value,inputService.value,inputHname.value,inputCinfo.value);
     if(isValid(thePet)==true){
        petSalon.pets.push(thePet)
-        displayCards();
         //push the pet into the array
+        displayTable();
+      
 
         //clear the inputs
         clearInputs(); 
@@ -85,11 +83,9 @@ function clearInputs(){
 }
 
 //Pets
-let Scrappy = new Pet ("Scrappy",7,"Bulldog","nails","Alex","253-255-2555");
-let Clifford = new Pet ("Clifford",12,"Red","full treatment","Aldrian","786-888-5225");
-let Crystal = new Pet ("Crystal",8,"Pug","VIP","Ruby","206-565-2564");
+let Scrappy = new Pet ("Scrappy",7,"Male", "Bulldog","nails","Alex","253-255-2555");
+let Clifford = new Pet ("Clifford",12,"Male","Red","full treatment","Aldrian","786-888-5225");
+let Crystal = new Pet ("Crystal",8,"Female","Pug","VIP","Ruby","206-565-2564");
 
 petSalon.pets.push(Scrappy,Clifford,Crystal)
-displayCards();
-
-// console.log(pet1,pet2,pet3)
+displayTable();
