@@ -26,10 +26,10 @@
             <div class="pet-reg" id="pet-registration">
                 
                 <div >
-                    <input class="form-control" type="text" placeholder="Enter pet's name" id="txtName">
+                    <input class="form-control" type="text" placeholder="Pet's Name" id="txtName">
                 </div>
                 <div >
-                    <input class="form-control" type="number" placeholder="Enter pet's age" id="txtAge">
+                    <input class="form-control" type="number" placeholder="Pet's Age" id="txtAge">
                 </div>
                 <div>
                 <select class="form-control" name="select-gender" id="selGender">
@@ -38,7 +38,7 @@
                 </select>
                 </div>
                 <div>
-                    <input class="form-control" type="text" placeholder="Enter pet's breed" id="txtBreed">
+                    <input class="form-control" type="text" placeholder="Pet's Breed" id="txtBreed">
                 </div>
                 <div>
                 <select class="form-control" name="select-service" id="selService">
@@ -48,21 +48,34 @@
                     </select>
                 </div>
                 <div>
-                    <input class="form-control" type="text" placeholder="Enter pet's human" id="txtHname">
+                    <input class="form-control" type="text" placeholder="Pet's Human" id="txtHname">
                 </div>
                 <div>
-                <input class="form-control" type="number" placeholder="Enter human's contact phone" id="txtCinfo"> 
+                <input class="form-control" type="number" placeholder="Human's Contact Phone" id="txtCinfo"> 
                 </div>
                 <div>
-                    <button onclick="register()" class="btn btn-primary">Register</button>
+                    <button onclick="register()" class="btn btn-primary">Register</button> 
                 </div>
+                <div>
+                    <input type="search" id="txtSearch">
+                    <button onclick="searchPet();" class="btn btn-dark">Search</button>
+                  </div>
                 </div>
             </div>
 
         <footer>
-            <div class="pets" id="pets">
+           <!-- <div class="pets" id="pets">
 
-            </div>
+            </div> -->
+                <h3>Pets Enjoying Our Services</h3>
+                <table class="table" id="table">
+                    <tbody>
+                        <tr>
+                            <th>Name</th>
+                        </tr>
+                    </tbody>
+                </table>
+
         </footer>
             <script src="scripts/display.js"></script>
             <script src="scripts/register.js"></script>

@@ -13,11 +13,11 @@ header{
     display: flex;
     justify-content: space-between;
     height: 40vh;
-    background-image: url(https://www.seat.mx/content/countries/mx/seat-website/es/servicio/accesorios-originales/seat-pets/_jcr_content/par/twocolumns_330270530_36697074/twocolumnsimage.resizedViewPort.noscale.assetRootS.jpg
-    );
+    background-image: url(https://www.hdnicewallpapers.com/Walls/Big/Dog/Dog_Running_on_Grass_Image.jpg);
     background-position: center top;
     background-size: cover;
 }
+
 
 /*register form*/
 
@@ -36,11 +36,50 @@ h2{
     flex-direction: row;
 }
 .pet{
-    border: solid;
+    border: 1px solid;
+    border-radius: 5px;
     padding: 2rem;
+
     
 }
 table{
     border: solid;
     padding: 3rem;
+}
+h3{
+    margin-top: 4rem;
+    background-color: aliceblue;
+    padding: 2rem;
+    color: rgb(112, 112, 112);
+}
+.pet .pet-header{
+    display: flex;
+    justify-content: space-between;
+}
+.pet .pet-header{
+    font-size: 12px;
+    border: none;
+}
+.highlight{
+    border:3px solid yellow;
+}
+main{
+    margin-top: 2rem;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+.vip-container h4{
+    margin-top: 2rem;
+    margin: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: bisque;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+.vip-container p{
+    margin-top: 2rem;
 }
